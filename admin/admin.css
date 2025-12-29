@@ -1,0 +1,44 @@
+  #admin{
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+  }
+  table{
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  table th{
+    color: #fff;
+  }
+  table td{
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+  }
+  .approve {
+    background: #00ffc8;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    padding: 5px 30px;
+    text-decoration: none;
+  }
+  .approve:hover{
+    background: rgb(0, 0, 0);
+    color: #00ffc8;
+  }
+
+  .discard {
+    background: #ff0000;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    padding: 5px 30px;
+    text-decoration: none;
+  }
+  .discard:hover{
+    background: rgb(255, 255, 255);
+    color: #ff0000;
+  }

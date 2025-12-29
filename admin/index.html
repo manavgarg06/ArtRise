@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>    
+  <body class="page">
+    <main class="main page__main">
+      <form class="login-form main__login-form" id="admin" method="POST">
+        <h3 class="login-form__title">Sign In</h3>
+        <label class="login-form__label" for="uname"><span class="sr-only">Username</span>
+          <input class="login-form__input" type="text" id="uname" name="uname" value="" placeholder="Username" required="required"/>
+        </label>
+        <label class="login-form__label" for="psw"><span class="sr-only">Password</span>
+          <input class="login-form__input" type="password" id="psw" name="psw" value="" placeholder="Password" required="required"/>
+        </label>
+        <button class="primary-btn" type="submit">Login</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
