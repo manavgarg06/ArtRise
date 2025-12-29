@@ -1,0 +1,332 @@
+#carding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #my_feed {
+  padding-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post-likes {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .post-favorites {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .post-comments {
+    display: flex;
+    align-items: center;
+  }
+
+.new-post-button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+  
+  .new-post-button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  
+  .feed-card {
+      display: block;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px; /* set maximum width */
+    }
+    
+    .profile-picture img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      float: left;
+      margin-right: 10px;
+    }
+    
+    .username {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .post-image {
+      clear: both;
+      margin-top: 10px;
+    }
+    
+    .post-image img {
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    
+    .post-actions {
+      padding-top: 10px;
+    }
+  
+    .post-content {
+      margin-bottom: 10px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    
+    .post-comments,
+    .post-likes,
+    .post-favorites {
+      cursor: pointer;
+    }
+  
+    .like i,
+    .comment i {
+      margin-right: 5px;
+    }
+    
+    .post-comments-section {
+      display: none;
+      margin-top: 10px;
+    }
+    
+    .post-comment {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }  
+    
+    .comment-author {
+      font-weight: bold;
+      margin: 0 0 5px 0;
+    }
+    
+    .comment-text {
+      margin: 0;
+    }
+    .add-comment input {
+      width: 100%;
+      padding: 5px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      }
+  
+      .add-comment button {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      }
+  
+      .add-comment button:hover {
+      background-color: #0e62c7;
+      }
+  
+
+      /* Profile-css */
+
+      .profile-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: rgb(28,12,54);
+        border-color: #ba0000;
+        border-radius: 1.5%;
+        margin-top: 80px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .profile-header {
+        display: flex;
+        align-items: center;
+      }
+      
+      .profile-image img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+      .profile-details {
+        margin-left: 20px;
+      }
+      
+      .profile-details h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+      
+      .profile-details p {
+        font-size: 20px;
+        color: #999;
+        margin: 0;
+      }
+      
+      .profile-details ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .profile-details li {
+        margin-right: 20px;
+      }
+      
+      .profile-details li:last-child {
+        margin-right: 0;
+      }
+      
+      .profile-details a {
+        text-decoration: none;
+        color: #008CBA;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      .profile-about {
+        margin-top: 30px;
+      }
+      
+      .profile-about h2 {
+        /* font-size: 24px; */
+        margin-bottom: 10px;
+      }
+      
+      .profile-about p {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.5;
+      }
+      
+      .profile-posts {
+        margin-top: 30px;
+      }
+      
+      .profile-posts p{
+        color: #666;
+      }
+      .profile-posts h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+/* star */
+
+      .star {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        position: relative;
+      }
+      .star:before {
+        content: "\2605";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #2c2c2c;
+        text-shadow: 1px 1px #888;
+        font-size: 20px;
+      }
+      .star:hover:before, .star.clicked:before {
+        color: #fff;
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+      }
+
+
+
+            /*---------------------profile-pic-----------------------------------------------------*/
+
+.profile-card__img {
+  margin-top: 2px;
+  width: 150px;
+  height: 150px;  
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  box-shadow: rgba(0,0,0,0.2) 0px 15px 20px;
+}
+.profile-card__img img {
+  display: block;
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.profile-pic {
+  color: transparent;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.profile-pic input {
+  display: none;
+}
+.profile-pic img {
+  position: absolute;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;  
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+  z-index: 0;
+}
+.profile-pic .-label {
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+}
+.profile-pic:hover .-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  color: #fafafa;
+  transition: background-color 0.2s ease-in-out;
+  margin-bottom: 0;
+}
+.profile-pic span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+}
+
+@media only screen and (max-width: 1085px) {
+  .sidenav {
+    display: none;
+  }
+}
