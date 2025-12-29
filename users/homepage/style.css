@@ -1,0 +1,165 @@
+#carding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #my_feed {
+  padding-bottom: 10px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post-likes {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .post-favorites {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .post-comments {
+    display: flex;
+    align-items: center;
+  }
+
+.new-post-button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+  
+  .new-post-button a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  
+  .feed-card {
+      display: block;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px; /* set maximum width */
+    }
+    
+    .profile-picture img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      float: left;
+      margin-right: 10px;
+    }
+    
+    .username {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .post-image {
+      clear: both;
+      margin-top: 10px;
+    }
+    
+    .post-image img {
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    
+    .post-actions {
+      padding-top: 10px;
+    }
+  
+    .post-content {
+      margin-bottom: 10px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    
+    .post-comments,
+    .post-likes,
+    .post-favorites {
+      cursor: pointer;
+    }
+  
+    .like i,
+    .comment i {
+      margin-right: 5px;
+    }
+    
+    .post-comments-section {
+      display: none;
+      margin-top: 10px;
+    }
+    
+    .post-comment {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      margin-left: 30px;
+    }  
+    
+    .comment-author {
+      font-weight: bold;
+      margin: 0 0 5px 0;
+    }
+    
+    .comment-text {
+      margin: 0;
+    }
+    .add-comment input {
+      width: 100%;
+      padding: 5px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      }
+  
+      .add-comment button {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      }
+  
+      .add-comment button:hover {
+      background-color: #0e62c7;
+      }
+  
+
+
+      .category__containers {
+        display: flex; /* use flexbox to arrange items */
+        flex-wrap: wrap; /* allow items to wrap to next line if there's not enough space */
+        justify-content: space-between; /* evenly distribute items with space between them */
+        align-items: center; /* align items vertically in center */
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+
+      #imgForcat{
+        width: 200px; /* set the width to fill the container */
+        height: 150px; /* set the height to a fixed value */
+        object-fit: cover; /* resize the image to cover the container */
+      }

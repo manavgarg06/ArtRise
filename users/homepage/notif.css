@@ -1,0 +1,92 @@
+   .notification {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .notification-bell {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .notification-bell i {
+    color: #fff;
+  }
+  
+  .btn__badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: #FF5D5D;
+    color: white;
+    font-size: 12px;
+    padding: 1px 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0.6);
+    animation: pulse 2s infinite;
+  }
+  
+  .pulse-button:hover {
+    animation: none;
+  }
+  
+  .notification-drop {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 200px;
+    z-index: 1;
+    display: none;
+  }
+  
+  .notification-drop .item {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notification-drop .item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-drop .item:hover {
+    background: #ddd;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .notification-drop .item a:hover {
+    color:#301934;
+  }
+  
+  .notification-drop .item .notification-text {
+    display: block;
+  }
+  
+  .notification-drop .item .notification-text span {
+    font-weight: normal;
+    color: #999;
+    margin-left: 5px;
+  }
+  
+  .notification:hover .notification-drop {
+    display: block;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
+    }
+    70% {
+      transform: scale(1.3);
+      box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+  }
+  
